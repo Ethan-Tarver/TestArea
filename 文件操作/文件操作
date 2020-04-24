@@ -1,0 +1,14 @@
+import os
+import time
+
+# 新建一个文件夹，名字为 id+ 日期
+
+tripid = '587497303129'
+data = time.strftime("%Y-%m-%d", time.localtime())
+filename = tripid + "|" + data
+
+os.mkdir('/Users/fengtingting/Downloads/python/文件操作/{}'.format(filename))
+
+for i in range(10):
+
+    os.mkdir('/Users/fengtingting/Downloads/python/文件操作/{}/{}'.format(filename,i))
